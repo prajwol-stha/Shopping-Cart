@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux'
 
 const Header = () => {
   const cartData=useSelector((state)=>state.reducer)
-  console.log(cartData)
+  // console.log(cartData)
   const[cartItems,setCartItems]=useState(0)
   useEffect(()=>{
     setCartItems(cartData.length)
