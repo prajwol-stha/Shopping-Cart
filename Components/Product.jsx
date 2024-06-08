@@ -29,7 +29,6 @@ const Product = props => {
     //     }
     //   });
     // }
-    console.log(`Current cart items:${cartItems.name}`)
     let result=cartItems.filter((elements)=>{
         return elements.name===item.name
     });
@@ -46,6 +45,7 @@ const Product = props => {
         borderBottomColor: 'white',
         borderBottomWidth: 2,
         paddingBottom: 30,
+        backgroundColor:'#202020'
       }}>
       <Text style={{fontSize: 20}}>{item.name}</Text>
       <Text style={{fontSize: 20}}>{item.color}</Text>

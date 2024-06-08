@@ -1,4 +1,4 @@
-import { ADD_TO_CART,REMOVE_FROM_CART } from "./constant";
+import { ADD_TO_CART,REMOVE_FROM_CART, SET_USER_DATA } from "./constant";
 
 const initialState=[];
 
@@ -17,6 +17,11 @@ export const reducer=(state=initialState,action)=>{
                 return item.name!=action.data
             })
             return [...result]
+
+        case SET_USER_DATA:
+            return [
+                action.data
+            ]
         default:
             return state;
     }
